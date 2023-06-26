@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 
 app.get("/", function (req, res) {
-    res.send("Welcome to my app!")
+    res.sendFile(__dirname + "/html/template.html")
 })
 
 app.get("/page1", function (req, res) {
